@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D423B0592050367400E06A58 /* Lock+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D423B0582050367400E06A58 /* Lock+Util.swift */; };
+		D423B05B2050BABC00E06A58 /* _OperationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D423B05A2050BABC00E06A58 /* _OperationList.swift */; };
+		D423B1C62055698900E06A58 /* SwiftBlockOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D423B1C52055698900E06A58 /* SwiftBlockOperation.swift */; };
 		D4C14F8C204B000B00DD8AAE /* SwiftOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C14F82204B000B00DD8AAE /* SwiftOperation.framework */; };
 		D4C14F91204B000B00DD8AAE /* SwiftOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C14F90204B000B00DD8AAE /* SwiftOperationTests.swift */; };
 		D4C14F93204B000B00DD8AAE /* SwiftOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C14F85204B000B00DD8AAE /* SwiftOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C14F9D204B008F00DD8AAE /* SwiftOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C14F9C204B008F00DD8AAE /* SwiftOperation.swift */; };
+		D4C14F9F204B035100DD8AAE /* SwiftOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C14F9E204B035100DD8AAE /* SwiftOperationQueue.swift */; };
+		D4C14FA1204BBCF100DD8AAE /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C14FA0204BBCF100DD8AAE /* OrderedSet.swift */; };
+		D4C14FD6204BF2E500DD8AAE /* OrderedSetRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C14FD5204BF2E500DD8AAE /* OrderedSetRef.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D423B0582050367400E06A58 /* Lock+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lock+Util.swift"; sourceTree = "<group>"; };
+		D423B05A2050BABC00E06A58 /* _OperationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _OperationList.swift; sourceTree = "<group>"; };
+		D423B1C52055698900E06A58 /* SwiftBlockOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBlockOperation.swift; sourceTree = "<group>"; };
 		D4C14F82204B000B00DD8AAE /* SwiftOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C14F85204B000B00DD8AAE /* SwiftOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOperation.h; sourceTree = "<group>"; };
 		D4C14F86204B000B00DD8AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C14F8B204B000B00DD8AAE /* SwiftOperationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOperationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C14F90204B000B00DD8AAE /* SwiftOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOperationTests.swift; sourceTree = "<group>"; };
 		D4C14F92204B000B00DD8AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C14F9C204B008F00DD8AAE /* SwiftOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOperation.swift; sourceTree = "<group>"; };
+		D4C14F9E204B035100DD8AAE /* SwiftOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOperationQueue.swift; sourceTree = "<group>"; };
+		D4C14FA0204BBCF100DD8AAE /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
+		D4C14FD5204BF2E500DD8AAE /* OrderedSetRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSetRef.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,13 @@
 			children = (
 				D4C14F85204B000B00DD8AAE /* SwiftOperation.h */,
 				D4C14F86204B000B00DD8AAE /* Info.plist */,
+				D4C14F9C204B008F00DD8AAE /* SwiftOperation.swift */,
+				D423B1C52055698900E06A58 /* SwiftBlockOperation.swift */,
+				D4C14F9E204B035100DD8AAE /* SwiftOperationQueue.swift */,
+				D423B05A2050BABC00E06A58 /* _OperationList.swift */,
+				D4C14FA0204BBCF100DD8AAE /* OrderedSet.swift */,
+				D4C14FD5204BF2E500DD8AAE /* OrderedSetRef.swift */,
+				D423B0582050367400E06A58 /* Lock+Util.swift */,
 			);
 			path = SwiftOperation;
 			sourceTree = "<group>";
@@ -148,6 +169,7 @@
 				TargetAttributes = {
 					D4C14F81204B000B00DD8AAE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					D4C14F8A204B000B00DD8AAE = {
@@ -196,6 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C14FD6204BF2E500DD8AAE /* OrderedSetRef.swift in Sources */,
+				D4C14FA1204BBCF100DD8AAE /* OrderedSet.swift in Sources */,
+				D423B0592050367400E06A58 /* Lock+Util.swift in Sources */,
+				D423B05B2050BABC00E06A58 /* _OperationList.swift in Sources */,
+				D4C14F9D204B008F00DD8AAE /* SwiftOperation.swift in Sources */,
+				D423B1C62055698900E06A58 /* SwiftBlockOperation.swift in Sources */,
+				D4C14F9F204B035100DD8AAE /* SwiftOperationQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +363,7 @@
 		D4C14F97204B000B00DD8AAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zetasq.SwiftOperation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +386,7 @@
 		D4C14F98204B000B00DD8AAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +408,7 @@
 		D4C14F9A204B000B00DD8AAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
 				INFOPLIST_FILE = SwiftOperationTests/Info.plist;
@@ -390,6 +423,7 @@
 		D4C14F9B204B000B00DD8AAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
 				INFOPLIST_FILE = SwiftOperationTests/Info.plist;
