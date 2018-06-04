@@ -13,14 +13,18 @@ public final class SwiftOperationQueue {
   public static let defaultMaxConcurrentOperationCount = ProcessInfo().processorCount
   
   public static let `default`: SwiftOperationQueue = {
-    let dispatchQueue = DispatchQueue(label: "SwiftOperationQueue::default::underlyingQueue", attributes: .concurrent)
+    let dispatchQueue = DispatchQueue(label: "SwiftOperationQueue::default::underlyingQueue", attributes: [.concurrent, .initiallyInactive])
     dispatchQueue.setTarget(queue: DispatchQueue.global(qos: .default))
+    dispatchQueue.resume()
+    
     return SwiftOperationQueue(queue: dispatchQueue)
   }()
   
   public static let main: SwiftOperationQueue = {
-    let dispatchQueue = DispatchQueue(label: "SwiftOperationQueue::main::underlyingQueue", attributes: .concurrent)
+    let dispatchQueue = DispatchQueue(label: "SwiftOperationQueue::main::underlyingQueue", attributes: [.concurrent, .initiallyInactive])
     dispatchQueue.setTarget(queue: DispatchQueue.main)
+    dispatchQueue.resume()
+
     return SwiftOperationQueue(queue: dispatchQueue, maxConcurrentOperationCount: 1)
   }()
   
